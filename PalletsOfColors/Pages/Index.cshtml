@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Promedio de colores de una imágen";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/Index.js")"></script>
+}
+
+<div class="text-center">
+    <div class="wrap">
+        <h3>Subir imagen</h3>
+        <p><input type="file" id="upload"></p>
+        <img src="/Images/Cataratas.JPG" id="imagen">
+        <p>
+            <div id="averagecolor"></div>
+        </p>
+    </div>
+</div>
